@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarveList</title>
+</head>
+<body>
+    <h1>Data from MongoDB</h1>
+    <ul>
+        <% data.forEach(function(item) { %>
+            <li>ResName: <%= item.ResName %></li>
+            <li>Loc: <%= item.Loc %></li>
+            <li>Course: <%= item.Course %></li>
+            <li>OtherCourse: <%= item.OtherCourse %></li>
+            <li>Amount: <%= item.Amount %></li>
+            <li>OtherAmount: <%= item.OtherAmount %></li>
+            <img src="/uploads/<%= item.Image %>" alt="Image">
+            <% }) %>
+    </ul>
+</body>
+</html>
